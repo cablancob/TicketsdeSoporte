@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "265111237066",
+    "firebase_url": "https://tickets-soporte.firebaseio.com",
+    "project_id": "tickets-soporte",
+    "storage_bucket": "tickets-soporte.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:265111237066:android:4ecaf4648a88a751",
+        "android_client_info": {
+          "package_name": "com.carlos.ticketsdesoporte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "265111237066-7p2uv2qdcg1l3ptercte9g52co08ppvb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.carlos.ticketsdesoporte",
+            "certificate_hash": "2e817927a08b91483560911b115e9edb08cbf46e"
+          }
+        },
+        {
+          "client_id": "265111237066-nbvu1ohgviqoiv3elop4527fv72qoneo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrMIIHvwHTDhKiBOVxeuAXLlaMLv5Yq-U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "265111237066-nbvu1ohgviqoiv3elop4527fv72qoneo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

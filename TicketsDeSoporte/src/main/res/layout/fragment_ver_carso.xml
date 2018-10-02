@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clickable="true"
+    tools:context=".VerCarso">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        style="@style/Scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/vTitulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Titulo:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/vTituloContenido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Titulo Contenido"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vTitulo" />
+
+            <TextView
+                android:id="@+id/vContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Contenido:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vTituloContenido" />
+
+            <TextView
+                android:id="@+id/vContenidoContenido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:text="CONTENIDO DEL CASO"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vContenido" />
+
+            <TextView
+                android:id="@+id/vObservaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Observaciones:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vContenidoContenido" />
+
+            <EditText
+                android:id="@+id/vObservacionesContenido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/edittext_borde"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:lines="3"
+                android:overScrollMode="always"
+                android:padding="2dp"
+                android:scrollHorizontally="false"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
+                android:text="Observaciones del Caso"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vObservaciones" />
+
+            <Button
+                android:id="@+id/vBotonObservaciones"
+                android:layout_width="71dp"
+                android:layout_height="30dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/boton_ovalo"
+                android:text="Actualizar"
+                android:textColor="@android:color/background_light"
+                android:textSize="6sp"
+                app:layout_constraintBottom_toBottomOf="@+id/vObservacionesContenido"
+                app:layout_constraintEnd_toEndOf="@+id/vObservacionesContenido" />
+
+            <TextView
+                android:id="@+id/vAsignadoPor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Asignado Por:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vObservacionesContenido" />
+
+            <TextView
+                android:id="@+id/vFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Fecha:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vAsignadoPor" />
+
+            <TextView
+                android:id="@+id/vEstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Estatus:"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vFecha" />
+
+            <TextView
+                android:id="@+id/vFechaContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="8dp"
+                android:text="PENDIENTE"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/vEstatus"
+                app:layout_constraintTop_toBottomOf="@+id/vFechaContenido2" />
+
+            <TextView
+                android:id="@+id/vFechaContenido2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="8dp"
+                android:text="2018-01-01"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/vFecha"
+                app:layout_constraintTop_toBottomOf="@+id/vAsignadoPorContenido" />
+
+            <TextView
+                android:id="@+id/vAsignadoPorContenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Carlos Blanco"
+                android:textSize="18sp"
+                app:layout_constraintStart_toEndOf="@+id/vAsignadoPor"
+                app:layout_constraintTop_toBottomOf="@+id/vObservacionesContenido" />
+
+            <Button
+                android:id="@+id/vCerrar"
+                style="@style/Boton"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
+                android:text="Cerrar Caso"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/vVerAdjuntos"
+                app:layout_constraintTop_toBottomOf="@+id/vFechaContenido" />
+
+            <Button
+                android:id="@+id/vVerAdjuntos"
+                style="@style/Boton"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:text="Ver Adjunto(s)"
+                android:visibility="visible"
+                app:layout_constraintEnd_toStartOf="@+id/vCerrar"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/vFechaContenido" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>
